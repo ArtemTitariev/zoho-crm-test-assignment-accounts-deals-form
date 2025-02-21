@@ -1,11 +1,11 @@
 <?php
 
-namespace App\Services;
+namespace App\Services\Zoho;
 
 use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Facades\Cache;
 
-final class ZohoTokenService
+final class TokenService
 {
     private string $clientId;
     private string $clientSecret;
@@ -48,4 +48,3 @@ final class ZohoTokenService
         throw new \Exception(__('Zoho CRM token failed to update.'));
     }
 }
-
