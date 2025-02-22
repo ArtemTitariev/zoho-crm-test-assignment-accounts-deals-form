@@ -60,6 +60,11 @@ class ZohoController extends Controller
         if ($existingDeal) {
             return response()->json([
                 'message' => __('Such a deal already exists for this account'),
+                'errors' => [
+                    'deal_name' => [
+                        __('Such a deal already exists for this account'),
+                    ],
+                ],
                 'deal_id' => $existingDeal['id'],
             ], 400);
         }
