@@ -4,7 +4,7 @@ namespace App\Services\Zoho;
 
 use Illuminate\Support\Facades\Http;
 
-final class DealService
+class DealService
 {
     public function findDealByNameAndAccountId(string $accessToken, string $dealName, string $accountId)
     {

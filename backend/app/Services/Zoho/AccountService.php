@@ -4,7 +4,7 @@ namespace App\Services\Zoho;
 
 use Illuminate\Support\Facades\Http;
 
-final class AccountService
+class AccountService
 {
     public function findAccountByName(string $accessToken, string $accountName)
     {

@@ -5,7 +5,7 @@ namespace App\Services\Zoho;
 use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Facades\Cache;
 
-final class TokenService
+class TokenService
 {
     private string $clientId;
     private string $clientSecret;
