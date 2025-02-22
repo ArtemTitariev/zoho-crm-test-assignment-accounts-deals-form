@@ -79,4 +79,4 @@ php artisan test
 
 ### License
 
-The MIT License (MIT). See [LICENSE](LICENSE.md) for more details.
+The MIT License (MIT). See [LICENSE](LICENSE) for more details.
