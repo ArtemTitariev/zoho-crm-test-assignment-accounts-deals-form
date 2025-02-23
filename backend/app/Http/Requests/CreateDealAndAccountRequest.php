@@ -24,7 +24,7 @@ class CreateDealAndAccountRequest extends FormRequest
         return [
             'account_name' => 'required|string|min:2|max:50',
             'account_website' => 'nullable|url',
-            'account_phone' => 'nullable|string',
+            'account_phone' => 'nullable|regex:/^([0-9\s\-\+\(\)]*)$/|min:10',
             'deal_name' => 'required|string|min:2|max:150',
             'deal_stage' => 'required|string|min:2|max:50',
         ];
