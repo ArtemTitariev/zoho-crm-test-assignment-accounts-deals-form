@@ -105,7 +105,12 @@ class ZohoControllerTest extends TestCase
         $mockAccountService->shouldReceive('findAccountByName')
             ->once()
             ->with($this->accessToken, $this->accountName)
-            ->andReturn(['id' => 123]);
+            ->andReturn([
+                'id' => 123,
+                'Account_Name' => $this->accountName,
+                'Website' => $this->website,
+                'Phone' => $this->phone,
+            ]);
 
         $mockDealService = Mockery::mock(DealService::class);
         $mockDealService->shouldReceive('findDealByNameAndAccountId')
@@ -143,7 +148,12 @@ class ZohoControllerTest extends TestCase
         $mockAccountService->shouldReceive('findAccountByName')
             ->once()
             ->with($this->accessToken, $this->accountName)
-            ->andReturn(['id' => 123]);
+            ->andReturn([
+                'id' => 123,
+                'Account_Name' => $this->accountName,
+                'Website' => $this->website,
+                'Phone' => $this->phone,
+            ]);
 
         $mockDealService = Mockery::mock(DealService::class);
         $mockDealService->shouldReceive('findDealByNameAndAccountId')
@@ -208,7 +218,12 @@ class ZohoControllerTest extends TestCase
         $mockAccountService->shouldReceive('findAccountByName')
             ->once()
             ->with($this->accessToken, $this->accountName)
-            ->andReturn(['id' => 123]);
+            ->andReturn([
+                'id' => 123,
+                'Account_Name' => $this->accountName,
+                'Website' => $this->website,
+                'Phone' => $this->phone,
+            ]);
 
         $mockDealService = Mockery::mock(DealService::class);
         $mockDealService->shouldReceive('findDealByNameAndAccountId')
